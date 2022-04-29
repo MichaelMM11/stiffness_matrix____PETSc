@@ -1,0 +1,4 @@
+add commit_message.txt, move test folder, changed .gitignore
+1) added the forgotten commit_message.txt to make the (inconvenient) command "git commit -m 'Here_could_be_your_message'" to the convenient, not changing command "git commit -F commit_message.txt"
+2) moved the test/ into data/ because test/ contains only needed files to test existing code (if some dedicated test files are needed some day then these will be stored in src/)
+3) added the file "committext.txt" to .gitignore
