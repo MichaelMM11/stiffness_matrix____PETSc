@@ -1,3 +1,4 @@
-py_virt_env
-petsc
+py_virt_env/
+petsc/
+commit_message.txt
 .idea
