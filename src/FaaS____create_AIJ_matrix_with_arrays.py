@@ -17,14 +17,18 @@ source
 
 from petsc4py import PETSc
 
+
+
+# to initialize data
 comm=PETSc.COMM_WORLD
 rank = comm.rank
 size = comm.size
 I = [0, 2, 5, 8, 11, 14, 16]
 J = [0, 1, 0, 1, 2, 1, 2, 3, 2, 3, 4, 3, 4, 5, 4, 5]
 A = [2, -1, -1, 2, -1, -1, 2, -1, -1, 2, -1, -1, 2, -1, -1, 2]
+
+
+# to create and inspect matrix
 M = PETSc.Mat()
 M.createAIJWithArrays([6, 6], (I,J,A), bsize=None, comm=comm)
-vi = PETSc.Viewer()
-vi.createBinary('test.data', mode=1, comm=comm)
 M.view()

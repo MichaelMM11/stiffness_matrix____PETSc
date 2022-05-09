@@ -16,7 +16,7 @@
 #      5) moves the last two lines on top of file                                                  #
 #                                                                                                  #
 #  execute                                                                                         #
-#      1) ./FaaS____from_Comsol_table_to_coo_matrix.awk <FILE> > <DATA>.mtx                        #
+#      1) awk -f FaaS____from_Comsol_table_to_coo_matrix.awk <FILE> > <DATA>.mtx                   #
 #      2) vim <DATA>.mtx -esc '$-1,$m0|wq' --not-a-term                                            #
 #                                                                                                  #
 #  remark                                                                                          #

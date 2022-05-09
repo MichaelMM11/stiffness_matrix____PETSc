@@ -17,6 +17,10 @@ As usual the file *requirements.txt* contains all packages that can be installed
 pip install -r requirements.txt
 ```
 But because for the sake of PETSc this needs to be installed by hand. An instruction is given at [Installation PETSc](https://petsc.org/release/install/).
+If PETSc is installed on the computer then is can be installed in the virtual environment with
+```
+pip install petsc petsc4py
+```
 
 # Folder structure
 ## src
